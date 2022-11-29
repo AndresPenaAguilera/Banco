@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace Clientes.API.Controllers
 {
+    [Route("api/[controller]")]
     [ApiController]
     public class CreadorClientesController : ControllerBase
     {
@@ -15,7 +16,7 @@ namespace Clientes.API.Controllers
             _mediator = mediator;
         }
 
-        [HttpPost("Cliente")]
+        [HttpPost]
         public async Task<ActionResult<Unit>> Crear(SolicitudCrearCliente solicitudCrearCliente)
         {
             return await _mediator.Send(solicitudCrearCliente);

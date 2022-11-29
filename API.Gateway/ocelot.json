@@ -1,0 +1,76 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/CreadorClientes",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "clientes.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/Cliente",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/CreadorClientes/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "clientes.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/Cliente/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/CreadorCuentas",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "cuentas.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/Cuenta",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/CreadorCuentas/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "cuentas.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/Cuenta/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/CreadorMovimientos",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "movimientos.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/Movimiento",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/CreadorMovimientos/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "movimientos.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/Movimiento/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
+  ]
+}

@@ -13,3 +13,19 @@ services:
     ports:
       - "6111:80"
 
+
+  movimientos.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "6112:80"
+
+
+  api.gateway:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - clientes.api
+    ports:
+      - "6113:80"
+

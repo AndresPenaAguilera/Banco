@@ -13,7 +13,21 @@ services:
       context: .
       dockerfile: Cuentas.API/Dockerfile
 
+  movimientos.api:
+    image: ${DOCKER_REGISTRY-}movimientosapi
+    build:
+      context: .
+      dockerfile: Movimientos.API/Dockerfile
+
+  api.gateway:
+    image: ${DOCKER_REGISTRY-}apigateway
+    build:
+      context: .
+      dockerfile: API.Gateway/Dockerfile
+
 networks: 
   default:
     external:
       name: banconet
+
+
