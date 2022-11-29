@@ -35,7 +35,8 @@ namespace Clientes.Tests.Datos
             _clientesContexto = new ClientesContexto(options, host);
             
             _clientesContexto.AgregarCliente(_cliente);
-            
+            _clientesContexto.GuardarCambios();
+
             Cliente actual =  _clientesContexto.ObtenerCliente(_cliente.Id);
 
             Assert.AreEqual(idEsperado, actual.Id);

@@ -1,10 +1,7 @@
-﻿using AutoMapper;
-using Clientes.Aplicacion;
+﻿using Clientes.Aplicacion;
 using Clientes.Datos;
 using Clientes.Interfaces.Datos;
 using Clientes.Modelos.DTO;
-using Clientes.Tests.Aplicacion.Mapping;
-using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Hosting.Internal;

@@ -7,31 +7,35 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clientes", "Clientes", "{39
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cuentas", "Cuentas", "{2D4868E3-E47F-4D0F-A544-CFFAD25340D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clientes.API", "Clientes.API\Clientes.API.csproj", "{719114C9-84E9-40E1-9E3F-8D58D367D9E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clientes.API", "Clientes.API\Clientes.API.csproj", "{719114C9-84E9-40E1-9E3F-8D58D367D9E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clientes.Datos", "Clientes.Datos\Clientes.Datos.csproj", "{DF2DDE56-53FD-4F13-9328-95433DF80540}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clientes.Datos", "Clientes.Datos\Clientes.Datos.csproj", "{DF2DDE56-53FD-4F13-9328-95433DF80540}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clientes.Interfaces", "Clientes.Interfaces\Clientes.Interfaces.csproj", "{84BA0295-EBB2-41E9-BC63-A2A580F15412}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clientes.Interfaces", "Clientes.Interfaces\Clientes.Interfaces.csproj", "{84BA0295-EBB2-41E9-BC63-A2A580F15412}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clientes.Resolver", "Clientes.Resolver\Clientes.Resolver.csproj", "{73EE7294-EE78-489C-BC47-813E91AF3BD8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clientes.Resolver", "Clientes.Resolver\Clientes.Resolver.csproj", "{73EE7294-EE78-489C-BC47-813E91AF3BD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clientes.Tests", "Clientes.Tests\Clientes.Tests.csproj", "{B8AE5A1F-F9EB-4753-B86B-4C2747050082}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clientes.Tests", "Clientes.Tests\Clientes.Tests.csproj", "{B8AE5A1F-F9EB-4753-B86B-4C2747050082}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clientes.Modelos", "Clientes.Modelos\Clientes.Modelos.csproj", "{7C469E4D-4484-44B8-85CA-73A4C268F1FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clientes.Modelos", "Clientes.Modelos\Clientes.Modelos.csproj", "{7C469E4D-4484-44B8-85CA-73A4C268F1FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clientes.Aplicacion", "Clientes.Aplicacion\Clientes.Aplicacion.csproj", "{74AEE9FC-C2E2-4F12-BF8C-EC0B0C70F84B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clientes.Aplicacion", "Clientes.Aplicacion\Clientes.Aplicacion.csproj", "{74AEE9FC-C2E2-4F12-BF8C-EC0B0C70F84B}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D706F4C7-8F09-4BC4-A405-DFD9969F57A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cuentas.API", "Cuentas.API\Cuentas.API.csproj", "{10ADA322-3E9D-4580-97ED-004DCD0AA866}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cuentas.API", "Cuentas.API\Cuentas.API.csproj", "{10ADA322-3E9D-4580-97ED-004DCD0AA866}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cuentas.Test", "Cuentas.Test\Cuentas.Test.csproj", "{251295FC-7D60-47AD-9099-ABE8259B70C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cuentas.Test", "Cuentas.Test\Cuentas.Test.csproj", "{251295FC-7D60-47AD-9099-ABE8259B70C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cuentas.Datos", "Cuentas.Datos\Cuentas.Datos.csproj", "{D171EA24-77E6-4B6C-884B-70201CC59E0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cuentas.Datos", "Cuentas.Datos\Cuentas.Datos.csproj", "{D171EA24-77E6-4B6C-884B-70201CC59E0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cuentas.Modelos", "Cuentas.Modelos\Cuentas.Modelos.csproj", "{C0604983-7C5E-41C9-8AF7-8C7E23EC9C2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cuentas.Modelos", "Cuentas.Modelos\Cuentas.Modelos.csproj", "{C0604983-7C5E-41C9-8AF7-8C7E23EC9C2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cuentas.Interfaces", "Cuentas.Interfaces\Cuentas.Interfaces.csproj", "{7C26E246-E41B-4916-98D5-5400E1BABECB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cuentas.Interfaces", "Cuentas.Interfaces\Cuentas.Interfaces.csproj", "{7C26E246-E41B-4916-98D5-5400E1BABECB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cuentas.Aplicacion", "..\Cuentas.Aplicacion\Cuentas.Aplicacion.csproj", "{277E12F4-1529-45D1-A4B3-3328BC262675}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cuentas.Resolver", "..\Cuentas.Resolver\Cuentas.Resolver.csproj", "{79B27E5A-A10E-4890-8374-21C952A9B424}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,6 +95,14 @@ Global
 		{7C26E246-E41B-4916-98D5-5400E1BABECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C26E246-E41B-4916-98D5-5400E1BABECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C26E246-E41B-4916-98D5-5400E1BABECB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{277E12F4-1529-45D1-A4B3-3328BC262675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{277E12F4-1529-45D1-A4B3-3328BC262675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{277E12F4-1529-45D1-A4B3-3328BC262675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{277E12F4-1529-45D1-A4B3-3328BC262675}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79B27E5A-A10E-4890-8374-21C952A9B424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79B27E5A-A10E-4890-8374-21C952A9B424}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79B27E5A-A10E-4890-8374-21C952A9B424}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79B27E5A-A10E-4890-8374-21C952A9B424}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -108,6 +120,8 @@ Global
 		{D171EA24-77E6-4B6C-884B-70201CC59E0E} = {2D4868E3-E47F-4D0F-A544-CFFAD25340D1}
 		{C0604983-7C5E-41C9-8AF7-8C7E23EC9C2D} = {2D4868E3-E47F-4D0F-A544-CFFAD25340D1}
 		{7C26E246-E41B-4916-98D5-5400E1BABECB} = {2D4868E3-E47F-4D0F-A544-CFFAD25340D1}
+		{277E12F4-1529-45D1-A4B3-3328BC262675} = {2D4868E3-E47F-4D0F-A544-CFFAD25340D1}
+		{79B27E5A-A10E-4890-8374-21C952A9B424} = {2D4868E3-E47F-4D0F-A544-CFFAD25340D1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E49F317A-77EE-46D1-806C-4B36D8BE4C34}

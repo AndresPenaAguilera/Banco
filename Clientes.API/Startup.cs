@@ -40,8 +40,6 @@ namespace Clientes.API
             services.AgregarServiciosClientes();
 
             services.AddMediatR(typeof(NuevoCliente.Manejador).Assembly);
-
-            services.AddAutoMapper(typeof(ConsultaFiltro.Manejador).Assembly);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -7,6 +7,12 @@ services:
       context: .
       dockerfile: Clientes.API/Dockerfile
 
+  cuentas.api:
+    image: ${DOCKER_REGISTRY-}cuentasapi
+    build:
+      context: .
+      dockerfile: Cuentas.API/Dockerfile
+
 networks: 
   default:
     external:

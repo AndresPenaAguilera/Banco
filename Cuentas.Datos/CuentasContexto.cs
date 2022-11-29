@@ -12,7 +12,7 @@ namespace Cuentas.Datos
 
     public partial class CuentasContexto : DbContext, ICuentasContexto
     {
-        public DbSet<Cuenta> Clientes { get; init; }
+        public DbSet<Cuenta> Cuentas { get; init; }
 
         public CuentasContexto(DbContextOptions<CuentasContexto> options, IHostEnvironment host) : base(options)
         {
@@ -24,12 +24,13 @@ namespace Cuentas.Datos
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-           // modelBuilder.ApplyConfiguration(new CuentaModelBuilder());
+            modelBuilder.ApplyConfiguration(new CuentaModelBuilder());
             base.OnModelCreating(modelBuilder);
         }
 
         public void GuardarCambios() => SaveChanges();
         public Task<int> GuardarCambiosAsync() => SaveChangesAsync();
 
+       
     }
 }

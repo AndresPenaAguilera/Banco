@@ -1,9 +1,6 @@
-﻿using AutoMapper;
-using Clientes.Interfaces.Datos;
+﻿using Clientes.Interfaces.Datos;
 using Clientes.Modelos.DTO;
-using Clientes.Modelos.Entidades;
 using MediatR;
-using System;
 using System.Threading;
 using System.Threading.Tasks;
 

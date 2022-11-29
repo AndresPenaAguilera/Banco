@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
     <PackageReference Include="MSTest.TestAdapter" Version="2.2.3" />
     <PackageReference Include="MSTest.TestFramework" Version="2.2.3" />
@@ -15,6 +18,13 @@
 
   <ItemGroup>
     <Folder Include="Datos\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Cuentas.Aplicacion\Cuentas.Aplicacion.csproj" />
+    <ProjectReference Include="..\Cuentas.Datos\Cuentas.Datos.csproj" />
+    <ProjectReference Include="..\Cuentas.Interfaces\Cuentas.Interfaces.csproj" />
+    <ProjectReference Include="..\Cuentas.Modelos\Cuentas.Modelos.csproj" />
   </ItemGroup>
 
 </Project>
