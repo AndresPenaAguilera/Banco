@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Clientes.Aplicacion\Clientes.Aplicacion.csproj" />
+    <ProjectReference Include="..\Clientes.Datos\Clientes.Datos.csproj" />
+    <ProjectReference Include="..\Clientes.Modelos\Clientes.Modelos.csproj" />
+    <ProjectReference Include="..\Clientes.Resolver\Clientes.Resolver.csproj" />
+  </ItemGroup>
+
+</Project>

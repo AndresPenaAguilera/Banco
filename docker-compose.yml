@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  clientes.api:
+    image: ${DOCKER_REGISTRY-}clientesapi
+    build:
+      context: .
+      dockerfile: Clientes.API/Dockerfile
+
+networks: 
+  default:
+    external:
+      name: banconet
