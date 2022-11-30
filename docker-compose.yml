@@ -8,7 +8,7 @@ services:
       SA_PASSWORD: "banco*123"
       ACCEPT_EULA: "Y"
     ports:
-      - "1434:1434"
+      - "1433:1433"
 
   clientes.api:
     image: ${DOCKER_REGISTRY-}clientesapi
@@ -35,18 +35,8 @@ services:
       dockerfile: API.Gateway/Dockerfile
 
 networks: 
-  default:
-    external:
-      name: banconet
-
-
-##
-#networks: 
-#  banconet:
-#    driver: bridge
-#    driver_opts:
-#        com.docker.network.enable_ipv6: "true"
-    #external:
-    #  name: banconet
-
-##
+  specific-network-name:
+    name: banconet
+    driver: bridge
+    driver_opts:
+        com.docker.network.enable_ipv6: "true"
