@@ -39,6 +39,11 @@ namespace Movimientos.API
             services.AgregarServiciosMovimientos();
 
             services.AddMediatR(typeof(NuevoMovimiento.Manejador).Assembly);
+
+            services.AddHttpClient("Clientes", config =>
+            {
+                config.BaseAddress = new System.Uri(Configuration["Services:Clientes"]);
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

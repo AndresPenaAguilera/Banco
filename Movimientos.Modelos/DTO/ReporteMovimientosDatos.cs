@@ -5,16 +5,9 @@ using System;
 
 namespace Movimientos.Modelos.DTO
 {
-    public class MovimientoDatos
+    public class ReporteMovimientosDatos
     {
-        public MovimientoDatos(Movimiento movimiento)
-        {
-            Id = movimiento.Id;
-            IdCuenta = movimiento.IdCuenta;
-            Valor = movimiento.Valor;
-            Fecha = movimiento.Fecha;
-
-        }
+        
 
         public int Id { get; set; }
         public int IdCuenta { get; set; }

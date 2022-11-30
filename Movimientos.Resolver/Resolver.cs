@@ -1,6 +1,8 @@
 ﻿
 using Microsoft.Extensions.DependencyInjection;
+using Movimientos.Aplicacion.ConsultasExternas;
 using Movimientos.Datos;
+using Movimientos.Interfaces.Aplicacion;
 using Movimientos.Interfaces.Datos;
 
 namespace Movimientos.Resolver
@@ -22,8 +24,7 @@ namespace Movimientos.Resolver
 
         private static void Aplicacion(IServiceCollection servicios)
         {
-
-
+            servicios.AddScoped<IConsultaClientes, ConsultaClientes>();
         }
 
         private static void Contextos(IServiceCollection servicios)

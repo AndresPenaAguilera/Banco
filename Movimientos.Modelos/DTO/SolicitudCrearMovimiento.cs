@@ -1,11 +1,12 @@
 ﻿using MediatR;
+using System;
 
 namespace Movimientos.Modelos.DTO
 {
     public class SolicitudCrearMovimiento : IRequest
     {
-        public int Id { get; set; }
-        public int IdCuenta { get; set; }
-        public decimal Valor { get; set; }
+        public int idCuenta { get; set; }
+        public decimal valor { get; set; }
+        public string fecha { get; set; }
     }
 }

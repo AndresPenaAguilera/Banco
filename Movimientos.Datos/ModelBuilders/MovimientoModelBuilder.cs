@@ -14,6 +14,7 @@ namespace Movimientos.Datos.ModelBuilders
             entidad.Property(propiedad => propiedad.Id).HasColumnName("Id");
             entidad.Property(propiedad => propiedad.IdCuenta).HasColumnName("IdCuenta");
             entidad.Property(propiedad => propiedad.Valor).HasColumnName("Valor");
+            entidad.Property(propiedad => propiedad.Fecha).HasColumnName("Fecha");
         }
     }
 }

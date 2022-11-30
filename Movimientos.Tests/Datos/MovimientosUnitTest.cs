@@ -18,13 +18,14 @@ namespace Cuentas.Test.Datos
         [TestInitialize]
         public void Inicializar()
         {
-            _movimiento = new Movimiento(1,2000);
+            _movimiento = new Movimiento(1,2000, new DateTime(2022, 01, 01));
         }
 
         [TestMethod]
         public void Debe_ObtenerCuenta()
         {
             int idEsperado = 1;
+            DateTime fechaEsperada = new DateTime(2022,01,01);
 
             var options = new DbContextOptionsBuilder<MovimientosContexto>()
             .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
@@ -40,6 +41,7 @@ namespace Cuentas.Test.Datos
             Movimiento actual = _movimientoContexto.ObtenerMovimiento(_movimiento.Id);
 
             Assert.AreEqual(idEsperado, actual.Id);
+            Assert.AreEqual(fechaEsperada, actual.Fecha);
         }
     }
 }

@@ -31,8 +31,9 @@ namespace Movimientos.Test.Aplicacion
 
             SolicitudCrearMovimiento request = new SolicitudCrearMovimiento()
             {
-                IdCuenta = 1,
-                Valor = 20000
+                idCuenta = 1,
+                valor = 20000,
+                fecha = "01/01/2022"
             };
 
             await new NuevoMovimiento.Manejador(_contexto).Handle(request, new System.Threading.CancellationToken());
