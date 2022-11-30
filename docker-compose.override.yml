@@ -24,8 +24,11 @@ services:
   api.gateway:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - Services__Cliente=http://api.gateway
+      - Services__Cuenta=http://api.gateway
     depends_on:
       - clientes.api
+      - cuentas.api
     ports:
       - "6113:80"
 

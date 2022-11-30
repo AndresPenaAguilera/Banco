@@ -71,6 +71,21 @@
       ],
       "UpstreamPathTemplate": "/Movimiento/{id}",
       "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/ConsultaMovimientos/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "movimientos.api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/ConsultaMovimientos/{id}",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DelegatingHandlers": [
+        "ReporteHandler"
+      ]
     }
   ]
 }

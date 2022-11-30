@@ -1,9 +1,6 @@
-﻿
+﻿using System.Collections.Generic;
 
-using Movimientos.Modelos.Entidades;
-using System.Collections.Generic;
-
-namespace Movimientos.Modelos.DTO
+namespace API.Gateway.HttpMessajeHandler.Modelos
 {
     public class ReporteMovimientosDatos
     {

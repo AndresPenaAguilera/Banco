@@ -1,5 +1,6 @@
 ﻿
 using Movimientos.Modelos.Entidades;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Movimientos.Interfaces.Datos
@@ -10,5 +11,6 @@ namespace Movimientos.Interfaces.Datos
         void GuardarCambios();
         Task<int> GuardarCambiosAsync();
         Movimiento ObtenerMovimiento(int id);
+        List<Movimiento> ObtenerMovimientos(int idCliente);
     }
 }

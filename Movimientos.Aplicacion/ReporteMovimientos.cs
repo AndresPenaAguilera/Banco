@@ -1,9 +1,7 @@
 ﻿using MediatR;
-using Movimientos.Aplicacion.ConsultasExternas;
 using Movimientos.Interfaces.Aplicacion;
 using Movimientos.Interfaces.Datos;
 using Movimientos.Modelos.DTO;
-using Movimientos.Modelos.Mensajes;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -23,15 +21,8 @@ namespace Movimientos.Aplicacion
 
             public async Task<ReporteMovimientosDatos> Handle(SolicitudConsultaReporte requestConsulta, CancellationToken cancellationToken)
             {
-                DatosCliente cliente;
-                var responseCliente = await _consultaClientes.ObtieneCliente(requestConsulta.IdCliente);
-                if (responseCliente.resultado)
-                {
-                    cliente = responseCliente.Cliente;
-                }
-
-                var reporteMovimientos = new ReporteMovimientosDatos();
-                return reporteMovimientos;
+                var movimientos = _contexto.ObtenerMovimientos(requestConsulta.IdCliente);
+                return new ReporteMovimientosDatos() { idCliente = requestConsulta.IdCliente, movimientos = movimientos };
             }
         }
     }

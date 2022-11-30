@@ -19,9 +19,9 @@ namespace Movimientos.API.Controllers
 
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<ReporteMovimientosDatos>> ObtenerMovimientos([FromQuery] int idCliente, [FromQuery] string fechaInicio, [FromQuery] string fechaFin)
+        public async Task<ActionResult<ReporteMovimientosDatos>> ObtenerMovimientos(int id)
         {
-            return await _mediator.Send(new SolicitudConsultaReporte() { IdCliente =idCliente, FechaInicio =fechaInicio, FechaFin = fechaFin });
+            return await _mediator.Send(new SolicitudConsultaReporte() { IdCliente = id });
         }
     }
 }
