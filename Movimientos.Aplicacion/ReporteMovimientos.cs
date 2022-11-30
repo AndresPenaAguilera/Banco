@@ -1,5 +1,4 @@
 ﻿using MediatR;
-using Movimientos.Interfaces.Aplicacion;
 using Movimientos.Interfaces.Datos;
 using Movimientos.Modelos.DTO;
 using System.Threading;
@@ -12,11 +11,9 @@ namespace Movimientos.Aplicacion
         public class Manejador : IRequestHandler<SolicitudConsultaReporte, ReporteMovimientosDatos>
         {
             private readonly IMovimientosContexto _contexto;
-            private readonly IConsultaClientes _consultaClientes;
-            public Manejador(IMovimientosContexto contexto, IConsultaClientes consultaClientes)
+            public Manejador(IMovimientosContexto contexto)
             {
                 _contexto = contexto;
-                _consultaClientes = consultaClientes;
             }
 
             public async Task<ReporteMovimientosDatos> Handle(SolicitudConsultaReporte requestConsulta, CancellationToken cancellationToken)
